@@ -1,0 +1,141 @@
+<!-- 1. Documento completo: idioma, meta viewport y título -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Vitrina de EmprenSena
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 2. Enlace de salto, encabezado y navegación -->
+    <a href="#contenido-principal">
+        Saltar al contenido
+    </a>
+    <header id="inicio" class="encabezado">
+        <h1>
+            Vitrina de EmprenSena
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#pedidos">Realizar pedido</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- 3. Contenido principal: productos y formulario -->
+    <main id="contenido-principal" class="contenedor">
+        <section id="productos">
+            <h2>Nuestros productos</h2>
+            <div class="rejilla">
+                <article class="tarjeta-producto">
+                    <h3>Café artesanal</h3>
+                    <img src="imagenes/cafe.jpg" alt="Bandeja de aluminio hermética de café artesanal fincas de sena">
+                    <p>
+                        Café cultivado por emprendedores estudiantes locales.
+                    </p>
+                    <p>
+                        Precio: $50.000
+                    </p>
+                </article>
+                <article class="tarjeta-producto">
+                    <h3>
+                        Té artesanal
+                    </h3>
+                    <img src="imagenes/te.jpg" alt="Tarro de té cultivado artesanalmente senna tea">
+                    <p>
+                        Té cultivado por emprendedores estudiantes locales.
+                    </p>
+                    <p>
+                        Precio: $30.000
+                    </p>
+                </article>
+                <article class="tarjeta-producto">
+                    <h3>
+                        Joyas artesanales
+                    </h3>
+                    <img src="imagenes/joya.jpg" alt="Fabricación de joyas artesanales por estudiantes emprendedores sena">
+                    <p>
+                        Joyas y accesorios fabricadas de forma artesanal por emprendedores estudiantes.
+                    </p>
+                    <p>
+                        Precio desde: $25.000
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="pedidos">
+            <h2>
+                Realizar pedido
+            </h2>
+            <form class="formulario">
+                <div class="mensaje error">
+                    No fue posible registrar tu pedido.
+                </div>
+                <div class="mensaje advertencia">
+                    Verifica los datos antes de enviar tu pedido.
+                </div>
+                <div class="mensaje exito">
+                    ¡Tu pedido fue registrado correctamente!
+                </div>
+                <label for="nombre">
+                    Nombre completo:
+                </label>
+                <input type="text" id="nombre" name="nombre" class="campo" required>
+                <label for="telefono">
+                    Teléfono:
+                </label>
+                <input type="tel" id="telefono" name="telefono" class="campo" required>
+                <label for="producto">
+                    Producto:
+                </label>
+                <select id="producto" name="producto" class="campo" required>
+                    <option value="">
+                        Seleccione un producto
+                    </option>
+                    <option value="cafe">
+                        Café artesanal
+                    </option>
+                    <option value="te">
+                        Té artesanal
+                    </option>
+                    <option value="joyas">
+                        Joyas artesanales
+                    </option>
+                </select>
+                <label for="cantidad">
+                    Cantidad:
+                </label>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1" class="campo" required>
+                <div class="contenedor-boton">
+                    <button type="submit" class="boton">
+                        Enviar pedido
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- 4. Pie de página -->
+    <footer id="contacto">
+        <h2>
+            Contacto
+        </h2>
+        <p>
+            EmprenSena - Vitrina hecha por y para emprendedores colombianos del SENA.
+        </p>
+        <p>
+            Centro de formación CENIGRAF SENA.
+        </p>
+        <a href="mailto:contacto@emprensena.com">
+            Correo ficticio: contacto@emprensena.com
+        </a> <!-- Correo de contacto ficticio -->
+        <p>
+            &copy; 2026 EmprenSena. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>
